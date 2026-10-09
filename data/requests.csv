@@ -1,0 +1,2 @@
+request_id,username,entitlement,reviewer,decision,expires_epoch,reason
+REQ001,alex.engineer@example.test,portal-admin,manager.engineering@example.test,approve,REPLACE_WITH_FUTURE_EPOCH,Investigate approved lab incident INC001

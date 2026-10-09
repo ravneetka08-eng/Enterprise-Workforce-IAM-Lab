@@ -1,0 +1,11 @@
+test_id,scenario,expected,actual,status,evidence_path,utc_time
+T01,Engineering access,HTTP 200,,NOT RUN,,
+T02,Engineering user opens Finance,HTTP 403,,NOT RUN,,
+T03,Move Engineering to Finance,Finance 200 Engineering 403,,NOT RUN,,
+T04,Leaver uses existing app session,HTTP 403,,NOT RUN,,
+T05,Duplicate lifecycle rerun,No additional users or groups,,NOT RUN,,
+T06,SCIM incorrect bearer,HTTP 401,,NOT RUN,,
+T07,SSO redirect mismatch,Login rejected,,NOT RUN,,
+T08,Self approval,Request rejected,,NOT RUN,,
+T09,Expired temporary grant,HTTP 403,,NOT RUN,,
+T10,MFA sign in,OTP required,,NOT RUN,,

@@ -1,0 +1,3 @@
+client_id,owner,purpose,approved_scopes,redirect_uris,grant_types,service_account,review_date,decision
+employee-portal,Application owner,Employee SSO,openid profile email,http://localhost:5000/callback,authorization_code,false,,PLANNED; VERIFY
+hr-automation,IAM operator,HR reconciliation,Administrative roles in workforce realm,None,client_credentials,true,,PLANNED; VERIFY

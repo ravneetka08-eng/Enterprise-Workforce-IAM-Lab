@@ -1,0 +1,11 @@
+JD_skill,lab_evidence,scope_limit
+IdP administration,Keycloak users groups MFA sessions; conditional Okta track,Not production Okta administration
+OIDC,Confidential portal code flow with PKCE,Local app only
+SAML,Two Keycloak realms with signed assertions,Local federation only
+SCIM,HTTP provisioning subset and negative tests,Not complete SCIM implementation or certified connector
+JML automation,HR CSV reconciliation to IdP and target,CSV emulates HRIS; no vendor HR connector
+Identity governance,Expiring approval ledger and access certification,Custom workflow; not Okta Identity Governance
+Audit readiness,Access review and identity event evidence,Does not establish SOC2 or ISO27001 compliance
+SaaS governance,Target inactivity and OAuth inventory review,No enterprise shadow IT discovery
+Device trust,Architecture and requirements exercise,Not implemented
+Google Jamf Island Entra,Gap register,Not implemented

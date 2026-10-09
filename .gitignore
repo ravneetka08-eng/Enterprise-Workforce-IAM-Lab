@@ -1,0 +1,12 @@
+.venv/
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+__pycache__/
+*.pyc
+private/
+evidence/raw/
+*.tgz
+*.tar.gz

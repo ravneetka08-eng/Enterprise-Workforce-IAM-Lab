@@ -1,0 +1,4 @@
+employee_id,username,first_name,last_name,department,status
+E001,alex.engineer@example.test,Alex,Finance,finance,active
+E002,priya.finance@example.test,Priya,Finance,finance,terminated
+E003,lee.hr@example.test,Lee,HR,hr,active
