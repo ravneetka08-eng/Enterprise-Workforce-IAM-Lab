@@ -1,6 +1,8 @@
 # Practical progress
 
-Mark complete only after validation and evidence collection. Prepared documentation does not mean the lab has been performed.
+**Tracking convention:** The checkboxes below mean *practically validated with a recorded result*, not merely that the corresponding documentation exists. The supplied archive contains implementation artefacts and lab instructions, but no completed learner test ledger or linked sanitized evidence. Check items only when their outcomes are confirmed.
+
+**Implementation:** Source code, manual, architecture, operational documents and test templates are present. **Validation:** Core results need recording. **Optional:** Step 15 (Okta) may be marked N/A if not used. **Release:** Steps 16–17 require a final publication and cleanup review.
 
 - [ ] [Step 0 Define the business problem](labs/00-step-0-define-the-business-problem.md)
 - [ ] [Step 1 Confirm the free tool boundary](labs/01-step-1-confirm-the-free-tool-boundary.md)

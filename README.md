@@ -1,6 +1,6 @@
 # Northstar Workforce IAM Lab
 
-**Project status: prepared for implementation. Practical validation is pending.**
+**Project status: implementation artefacts prepared; practical validation and publication sign-off not yet documented.**
 
 This project develops workforce identity and access management skills using a local identity environment for a fictional company, Northstar People. It addresses inconsistent onboarding, obsolete access after transfers, delayed offboarding and poorly documented access decisions.
 
@@ -8,19 +8,19 @@ This project develops workforce identity and access management skills using a lo
 
 Read [START-HERE](START-HERE.md), then follow the [manual](IAM-Industry-Lab-Manual.docx) or its [browser version](docs/manual.html). The Markdown [manual](docs/manual.md) is also available. Commands run from this repository root.
 
-## Planned capabilities
+## Implemented design and validation tracking
 
 | Capability | Implementation | Validation status |
 |---|---|---|
-| Identity directory and groups | Keycloak workforce realm | Pending |
-| OIDC sign-in | Confidential portal client with code flow and PKCE | Pending |
-| SAML federation | Workforce IdP and partner broker realm | Pending |
-| Provisioning | Python bridge and a local SCIM HTTP subset | Pending |
-| Joiner mover leaver workflows | Approved HR snapshot reconciliation | Pending |
-| MFA support | OTP enrolment and verified recovery exercise | Pending |
-| Temporary access | Approval ledger with runtime expiry | Pending |
-| Access review | Target access and activity report with remediation | Pending |
-| AWS least privilege | Policy simulation without infrastructure | Pending |
+| Identity directory and groups | Keycloak workforce realm | Evidence not recorded |
+| OIDC sign-in | Confidential portal client with code flow and PKCE | Evidence not recorded |
+| SAML federation | Workforce IdP and partner broker realm | Evidence not recorded |
+| Provisioning | Python bridge and a local SCIM HTTP subset | Evidence not recorded |
+| Joiner mover leaver workflows | Approved HR snapshot reconciliation | Evidence not recorded |
+| MFA support | OTP enrolment and verified recovery exercise | Evidence not recorded |
+| Temporary access | Approval ledger with runtime expiry | Evidence not recorded |
+| Access review | Target access and activity report with remediation | Evidence not recorded |
+| AWS least privilege | Policy simulation without infrastructure | Evidence not recorded |
 | Okta administration | Optional eligible free-tenant track | Not started |
 
 ![Architecture](docs/architecture.png)
@@ -49,6 +49,19 @@ The core needs no paid services or running AWS compute. See [cost register](docs
 
 ## Evidence and progress
 
-Record results in [test results](templates/test-results.csv), connect them to [evidence index](docs/evidence-index.csv), and update [progress](docs/progress.md). No learner test has been marked passed in this starter. Code checks performed during preparation do not replace your live integration tests.
+Record results in [test results](templates/test-results.csv), connect them to [evidence index](docs/evidence-index.csv), and update [progress](docs/progress.md). The repository includes implementation code and lab procedures. The supplied test-results ledger does not yet contain observed learner outcomes. Record real results and link evidence before claiming full practical completion. Code checks performed during preparation do not replace live integration tests.
 
 See [known limitations](docs/known-limitations.md), [risk methodology](docs/risk-methodology.md) and [final report](docs/final-report.md). This is a learning portfolio, not a claim of production deployment or SOC 2/ISO 27001 compliance.
+
+## Project completion and GitHub release gate
+
+The source code and documentation are a project deliverable; the working identity environment and its validated outcomes are a separate deliverable. Before labelling this repository **Completed**, confirm the following:
+
+1. Record actual outcomes for the core tests in `templates/test-results.csv`, including failed or blocked cases.
+2. Link existing sanitized screenshots, logs, or command outputs in `docs/evidence-index.csv`; do not fabricate results or timestamps.
+3. Finish access certification decisions, incident resolution, backup/restore observations, and residual-risk review.
+4. Complete `docs/final-report.md` with observed results and explicitly identify untested features.
+5. Inspect `git status` and `git diff --cached`, verify no secrets or raw identity databases are staged, then commit and push.
+6. Verify the published README, links, images, and latest commit on GitHub.
+
+**Scope note:** Optional Okta administration is not a prerequisite for core completion. This is an educational local lab, not a production IAM deployment or a compliance certification.
